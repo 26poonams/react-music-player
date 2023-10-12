@@ -1,4 +1,4 @@
-const Qeue = (props)=>{
+const Queue = (props)=>{
     return(
         <div className="col-md-9 row-md-2">
             <span>{props.list}</span>
@@ -9,4 +9,4 @@ const Qeue = (props)=>{
     )
 }
 
-export default Qeue;
+export default Queue;

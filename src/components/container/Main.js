@@ -1,5 +1,5 @@
 import Card from "./Card";
-import Qeue from "./Qeue";
+import Queue from "./Queue";
 
 
 const arr=[
@@ -33,7 +33,7 @@ function Main(){
                 <div className="sidebar">
                     {
                         qeue.map((x,i)=>(
-                            <Qeue{...x}/>
+                            <Queue{...x}/>
                         ))
                     }
                 </div>
