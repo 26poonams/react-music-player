@@ -2,4 +2,6 @@
     background-color: black;
     color: bisque;
     justify-content: space-around;
+    height: 90px;
+    align-items: center;
 }

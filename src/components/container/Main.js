@@ -1,13 +1,21 @@
 import Card from "./Card";
+import Qeue from "./Qeue";
 
 
 const arr=[
-    {name: "Gully Boy", date:"7-Aug-2017" , image:"card1.jpeg"},
-    {name: "Lover", date:"7-Aug-2017" , image:"card1.jpeg"},
-    {name: "Calm down", date:"7-Aug-2017" , image:"card1.jpeg"},
-    {name: "faded", date:"7-Aug-2017" , image:"card1.jpeg"}
+    {image:"card1.jpeg", name: "Gully Boy", date:"7-Aug-2017"},
+    {image:"card1.jpeg",name: "Lover", date:"7-Aug-2017"},
+    {image:"card1.jpeg",name: "Calm down", date:"7-Aug-2017"},
+    {image:"card1.jpeg",name: "faded", date:"7-Aug-2017"}
 ]
+ const qeue=[
+    {list:"1",image:"card1.jpeg", name:"lover", icon:"heart"},
+    {list:"1",image:"card1.jpeg", name:"lover", icon:"heart"},
+    {list:"1",image:"card1.jpeg", name:"lover", icon:"heart"},
+    {list:"1",image:"card1.jpeg", name:"lover", icon:"heart"},
+    {list:"1",image:"card1.jpeg", name:"lover", icon:"heart"}
 
+ ]
 
 function Main(){
     return(
@@ -19,6 +27,13 @@ function Main(){
                     {
                         arr.map((x,i)=>(
                             <Card {...x}/>
+                        ))
+                    }
+                </div>
+                <div className="sidebar">
+                    {
+                        qeue.map((x,i)=>(
+                            <Qeue{...x}/>
                         ))
                     }
                 </div>
